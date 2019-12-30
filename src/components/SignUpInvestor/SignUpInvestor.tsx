@@ -5,7 +5,7 @@ import {
   ISignUpInvestorDispatchProps,
   ISignUpInvestorProps
 } from './ISignUpInvestorProps';
-import styles from './SignUpInvestor.module.scss';
+import './SignUpInvestor.scss';
 
 export type propsType = ISignUpInvestorStateProps & ISignUpInvestorDispatchProps & ISignUpInvestorProps;
 
@@ -20,7 +20,7 @@ class SignUpInvestor extends React.Component<
 
   public render() {
     return (
-      <div className={`${styles.signUpInvestor}`}>
+      <div className="signUpInvestor">
         <h3>SignUpInvestor Component!</h3>
       </div>
     );

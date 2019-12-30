@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { IVendorProps } from './IVendorProps';
-import styles from './Vendor.module.scss';
+import './Vendor.scss';
 
 const Vendor: React.SFC<IVendorProps> = (props) => {
   return (
-    <div className={`${styles.vendor}`}>
+    <div className="vendor">
       <h3>Vendor Stateless Component!</h3>
     </div>
   );

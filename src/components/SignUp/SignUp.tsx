@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ISignUpProps } from './ISignUpProps';
-import styles from './SignUp.module.scss';
+import'./SignUp.scss';
 import SignUpVendor from '../SignUpVendor/SignUpVendorContainer';
 import SignUpInvestor from '../SignUpInvestor/SignUpInvestorContainer';
 
@@ -24,7 +24,7 @@ const SignUp: React.SFC<ISignUpProps> = (props) => {
   }
 
   return (
-    <div className={`${styles.signUp}`}>
+    <div className="signUp">
       <div className="text-center">
         <button onClick={asVendor} className="btn btn-primary select-role">Sign up as Vendor</button>
         <button /* disabled */ onClick={asInvestor} className="btn btn-primary select-role">Sign up as Investor</button>

@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { IEmailValidateProps } from './IEmailValidateProps';
-import styles from './EmailValidate.module.scss';
+import'./EmailValidate.scss';
 
 const EmailValidate: React.SFC<IEmailValidateProps> = (props) => {
   return (
-    <div className={`${styles.emailValidate}`}>
+    <div className="emailValidate">
       <h3>EmailValidate Stateless Component!</h3>
     </div>
   );

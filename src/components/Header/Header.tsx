@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { IHeaderProps } from './IHeaderProps';
-import styles from './Header.module.scss';
+import './Header.scss';
 import { Route, Link, withRouter, Redirect } from 'react-router-dom';
 import my_history_2 from '../../services/HistoryModule';
 import AuthService from '../../services/AuthService';
@@ -46,7 +46,7 @@ const Header: React.SFC<IHeaderProps> = (props) => {
   }
 
   return (
-    <div className={`${styles.header}`}>
+    <div className="header">
       <nav className="navbar navbar-dark bg-dark">
         <Link to="/">
           <span className="navbar-brand mb-0 h1">IIUA</span>

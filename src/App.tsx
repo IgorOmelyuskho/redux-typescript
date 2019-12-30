@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 import SharedHeader from './components/SharedHeader/SharedHeader';
 import { Provider } from 'react-redux';
-import { Store } from '../src/store/reducers';
+import { Store } from './store/store';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import ForProgramRouting from './services/ForProgramRouting/ForProgramRouting';
 import ReactNotification from 'react-notifications-component';
@@ -11,6 +11,7 @@ import SignIn from './components/SignIn/SignIn';
 import EmailValidate from './components/EmailValidate/EmailValidate';
 import Vendor from './components/Vendor/Vendor';
 import 'bootstrap/dist/css/bootstrap.css';
+import 'react-notifications-component/dist/theme.css'
 import SignUp from './components/SignUp/SignUp';
 
 const themes = {

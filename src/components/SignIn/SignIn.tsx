@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { ISignInProps } from './ISignInProps';
-import styles from './SignIn.module.scss';
+import'./SignIn.scss';
 
 const SignIn: React.SFC<ISignInProps> = (props) => {
   return (
-    <div className={`${styles.signIn}`}>
+    <div className="signIn">
       <h3>SignIn Stateless Component!</h3>
     </div>
   );
